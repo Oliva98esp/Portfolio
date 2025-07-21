@@ -1,0 +1,15 @@
+/* Variables de colores */
+:root {
+  --color-morado: #4c276a;
+  --color-granate: #6a274c;
+  --color-lavanda: #e2d4f0;
+  --color-claro: #f5f3f7;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
