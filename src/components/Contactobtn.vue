@@ -7,18 +7,18 @@
       @click="openModal"
       @keyup.enter="openModal"
     >
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Envelope.svg"
-        alt="Ícono de contacto (sobre)"
-        class="contact-icon"
-      />
+ <img
+  src="https://cdn-icons-png.flaticon.com/512/561/561127.png"
+  alt="Ícono de contacto"
+  class="contact-icon"
+/>
       <span class="contact-text">Contacto</span>
     </button>
 
     <div
       v-if="showModal"
       class="modal-backdrop"
-      @click.self="closeModal"
+      @click.self.stop="closeModal"
       role="dialog"
       aria-modal="true"
       aria-labelledby="modalTitle"
@@ -28,17 +28,20 @@
       <div class="modal-content">
         <h2 id="modalTitle">Elige cómo contactarme</h2>
         <div class="contact-options">
-          <a
-            href="mailto:josecarlosoliva01@gmail.com"
-            class="contact-option"
-            aria-label="Contactar por correo electrónico"
-          >
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
-              alt="Ícono de Email"
-              class="contact-option-icon"
-            />
-            Email
+        <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=josecarlosoliva01@gmail.com&su=Contacto%20desde%20Portafolio&body=Hola%20José%20Carlos,%20te%20contacto%20desde%20tu%20portafolio."
+  target="_blank"
+  rel="noopener noreferrer"
+  class="contact-option"
+  aria-label="Contactar por correo electrónico"
+  @click.stop
+>
+<img
+  src="https://cdn-icons-png.flaticon.com/512/281/281769.png"
+  alt="Ícono de Gmail"
+  class="contact-option-icon"
+/>
+ Email
           </a>
           <a
             href="https://wa.me/34605654086"
@@ -46,6 +49,7 @@
             rel="noopener noreferrer"
             class="contact-option"
             aria-label="Contactar por WhatsApp"
+            @click.stop
           >
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
@@ -110,7 +114,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
   padding: 0.8rem 1.5rem;
   background: #6200ea;
   color: #ffffff;

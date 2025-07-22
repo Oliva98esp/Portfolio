@@ -1,30 +1,25 @@
-
-import { createRouter, createWebHistory } from 'vue-router';
-import Hero from '../components/Hero.vue';
-import Proyectos from '../components/Proyectos.vue';
-import Habilidades from '../components/Habilidades.vue';
+import { createRouter, createWebHashHistory } from 'vue-router'
+import App from '../App.vue'
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Hero,
-  },
-  {
-    path: '/proyectos',
-    name: 'Proyectos',
-    component: Proyectos,
-  },
-  {
-    path: '/habilidades',
-    name: 'Habilidades',
-    component: Habilidades,
-  },
-];
+    path: '/:catchAll(.*)?',
+    component: App
+  }
+]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
-});
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth',
+      }
+    }
+    return savedPosition || { top: 0 }
+  }
+})
 
-export default router;
+export default router

@@ -12,13 +12,13 @@
         @keyup.enter="goToProject('https://www.isokan.es')"
       >
         <img 
-          src="https://placehold.co/600x400/0a0a23/d1d1f6?text=Isokan" 
+          src="/public/imagenes/logohttps.png" 
           alt="Miniatura de la aplicación web Isokan" 
           class="project-image"
         >
         <div class="project-info">
           <h3>Isokan</h3>
-          <p>Plataforma web para [descripción breve, por ejemplo: gestión de proyectos o servicios].</p>
+          <p>App web para una protectora de animales y centro de adiestramiento y rehabilitación de casos agresivos.</p>
         </div>
       </div>
       <!-- Proyecto 2: ByFuel Advance -->
@@ -31,13 +31,13 @@
         @keyup.enter="goToProject('https://www.byfueladvance.com')"
       >
         <img 
-          src="https://placehold.co/600x400/0a0a23/d1d1f6?text=ByFuel+Advance" 
+          src="/public/imagenes/logoFuelAdvance.png" 
           alt="Miniatura de la aplicación web ByFuel Advance" 
           class="project-image"
         >
         <div class="project-info">
           <h3>ByFuel Advance</h3>
-          <p>Solución web para [descripción breve, por ejemplo: optimización de combustible o servicios].</p>
+          <p>Solución web para la gestión de un taller mecánico y sus diferentes servicios.</p>
         </div>
       </div>
     </div>
@@ -103,7 +103,9 @@ const goToProject = (url) => {
 .project-image {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  object-fit: contain ;
+  margin: 10px 0;
+  padding: 10px 10px 0;
   display: block;
 }
 
