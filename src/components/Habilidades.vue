@@ -73,6 +73,28 @@
     <h3>API</h3>
     <p>Integración y desarrollo de APIs RESTful.</p>
   </div>
+  <!-- GIT -->
+<div class="skill-card" role="article" aria-label="Habilidad en GIT">
+  <img
+    src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png"
+    alt="Ícono de GIT"
+    class="skill-icon"
+  />
+  <h3>GIT</h3>
+  <p>Control de versiones y colaboración en proyectos.</p>
+</div>
+
+<!-- GITHUB -->
+<div class="skill-card" role="article" aria-label="Habilidad en GITHUB">
+  <img
+    src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png"
+    alt="Ícono de GITHUB"
+    class="skill-icon"
+  />
+  <h3>GITHUB</h3>
+  <p>Control de versiones y colaboración en proyectos.</p>
+</div>
+
 </div>
 
   </section>

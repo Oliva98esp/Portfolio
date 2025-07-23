@@ -48,7 +48,7 @@ import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
 // URL del PDF (reemplazar con la URL real de tu currículum)
-const cvUrl = ref('https://example.com/cv.pdf');
+const cvUrl = ref('/Jose_Carlos_Oliva_CV.pdf');
 
 const router = useRouter();
 

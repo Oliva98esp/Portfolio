@@ -4,7 +4,7 @@
     <div id="particles-js" class="particles-container"></div>
     <div class="content">
       <h1 id="hero-title">Hola, soy José Carlos Oliva Rodríguez</h1>
-      <p>Desarrollador Frontend Apasionado</p>
+      <p>Desarrollador Frontend</p>
       <p>Descubre mis proyectos, habilidades, experiencia y carta de presentación</p>
       <router-link 
         to="#proyectos"
@@ -61,7 +61,7 @@
         aria-label="Ver mi carta de presentación"
       >
         <img
-          src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png"
+          src="https://cdn-icons-png.flaticon.com/512/8347/8347406.png"
           alt="Ícono de carta de presentación"
           class="cta-icon"
         />
@@ -74,8 +74,9 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
+
 // URL del PDF (reemplazar con la URL real de tu currículum)
-const cvUrl = ref('https://example.com/cv.pdf')
+const cvUrl = ref('./Jose_Carlos_Oliva_CV.pdf')
 
 // Inicializar particles.js
 onMounted(() => {
@@ -90,6 +91,7 @@ onMounted(() => {
     console.error('Error al cargar particles.json:', error)
   })
 })
+
 </script>
 <style scoped>
 .hero-container {

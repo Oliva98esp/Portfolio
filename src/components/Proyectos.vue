@@ -12,7 +12,7 @@
         @keyup.enter="goToProject('https://www.isokan.es')"
       >
         <img 
-          src="/public/imagenes/logohttps.png" 
+          src="/public/imagenes/dog_1.JPG" 
           alt="Miniatura de la aplicación web Isokan" 
           class="project-image"
         >
@@ -31,7 +31,7 @@
         @keyup.enter="goToProject('https://www.byfueladvance.com')"
       >
         <img 
-          src="/public/imagenes/logoFuelAdvance.png" 
+          src="/public/imagenes/car_1.JPG" 
           alt="Miniatura de la aplicación web ByFuel Advance" 
           class="project-image"
         >
@@ -103,9 +103,7 @@ const goToProject = (url) => {
 .project-image {
   width: 100%;
   height: 200px;
-  object-fit: contain ;
-  margin: 10px 0;
-  padding: 10px 10px 0;
+  object-fit: cover;
   display: block;
 }
 
